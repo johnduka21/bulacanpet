@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-PH">
+<head>
+	<!--METADATA: GOOGLE SEO STUFF AND MAKING THIS GOOD FOR MOBILE-->
+	<meta charset= "UTF-8">
+	<meta name = "description" content = "Bulacan Pet Fish Supply E-Commerce">
+	<meta name = "keywords" content = "Bulacan, fish, pet fish, fish supply, fish supplies, fish accessory, fish accessories, fish store, 
+    aquarium, aquarium tank">
+	<meta name = "author" content = "Daniep Curvie Sleebush">
+	<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+	<!--Title, Favicons, Font, Icons in Font, and CSS Stylesheet-->
+	<title>Bulacan Pet Fish Supply</title>
+	<link rel="icon" type="image/x-icon" href="images/PlaceholderFavIcon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="background-color:#0062E4;">
+	<div id="webpage">
+	<!--Banner.-->
+	<header>
+		<div class="menu-nav" style="background-color:white;color:black;">
+			<span style="font-size:1.5rem;cursor:pointer;color:#0062E4" onclick="openMenu()">&#9776;</span>
+			<strong>BULACAN PET FISH SUPPLY</strong>
+			<div class="search-box" style="display:none;">
+				<form action="/search.php">
+				<input type="text" placeholder="Search Products" name="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</div>  
+		<!--Animated Sidebar.-->
+			<div id="sideNav" class="sidenav">
+			  <a href="javascript:void(0)" id="mainCloseButton" class="closebtn" onclick="closeMenu()">&times;</a>
+			  <div id="mainMenu" class ="side-options">
+                  <a id="#Menu" href="index.php">Home<i class="fa fa-chevron-right"></i></a>
+				  <a href="#Fish" onclick="openFishMenu()">Fish<i class="fa fa-chevron-right"></i></a>
+				  <a href="#Aquarium" onclick="openAquaMenu()">Aquarium<i class="fa fa-chevron-right"></i></a>
+				  <a href="#Equipment" onclick="openequpMenu()">Equipment<i class="fa fa-chevron-right"></i></a>
+				  <a href="#location">Our Location<i class="fa fa-chevron-right"></i></a>
+				  <a href="#faq">FAQ<i class="fa fa-chevron-right"></i></a>
+				  <a href="#contact">Contact<i class="fa fa-chevron-right"></i></a>
+			  </div>
+			  <div id="fishMenu" class ="sub-side-options">
+					<!--The duplicate close buttons are here because whenever the main menu disappears the close button somehow stops 
+                    working as a link for some reason and I don't know why-->
+				    <a href="javascript:void(0)" id="fishCloseButton" class="closebtn" onclick="closeMenu()">&times;</a>
+					<a href="#Menu"  class= "back-to-menu" onclick="closeFishMenu()"><i class="fa fa-chevron-left"></i> Go back</a>
+					<span><b>Fish</b></span>
+					<a href="fish-category.php">Shop by category<i class="fa fa-chevron-right"></i></a>
+					<a href="#FishFood">Fish Food<i class="fa fa-chevron-right"></i></a>
+			  </div>
+			  <div id="aquaMenu" class ="sub-side-options">
+					<!--The duplicate close buttons are here because whenever the main menu disappears the close button somehow stops w
+                    orking as a link for some reason and I don't know why-->
+				    <a href="javascript:void(0)" id="aquaCloseButton" class="closebtn" onclick="closeMenu()">&times;</a>
+					<a href="#Menu"  class= "back-to-menu" onclick="closeAquaMenu()"><i class="fa fa-chevron-left"></i> Go back</a>
+					<span><b>Aquarium</b></span>
+					<a href="#AquaType">Shop by gallons<i class="fa fa-chevron-right"></i></a>
+					<a href="#AquaDeco">Aquarium décor<i class="fa fa-chevron-right"></i></a>
+			  </div>
+			  <div id="equpMenu" class ="sub-side-options">
+					<!--The duplicate close buttons are here because whenever the main menu disappears the close button somehow stops 
+                    working as a link for some reason and I don't know why-->
+				    <a href="javascript:void(0)" id="equpCloseButton" class="closebtn" onclick="closeMenu()">&times;</a>
+					<a href="#Menu"  class= "back-to-menu" onclick="closeequpMenu()"><i class="fa fa-chevron-left"></i> Go back</a>
+					<span><b>Equipment</b></span>
+					<a href="#equpAll">All equipments<i class="fa fa-chevron-right"></i></a>
+					<a href="#equpHeat">Heaters<i class="fa fa-chevron-right"></i></a>
+					<a href="#equpAirP">Air Pumps<i class="fa fa-chevron-right"></i></a>
+					<a href="#equpFltr">Filters<i class="fa fa-chevron-right"></i></a>
+			  </div>
+			  <div id="userProfile" class ="profile">
+				<span><b><i class="fa fa-user"></i> Sign In</b></span>
+				<a href="#Shopping"><i class="fa fa-shopping-cart"></i> Your Cart</a>
+			  </div>
+			</div>
+		<a id="top"></a><a id="home"></a>
+	</header>
+		<ul class="breadcrumbs" style="display:none;">
+          <li><a href="index.php">Homepage</a></li>
+          <li>Sign-in</li>
+		</ul>
+    <div class="sign-in">
+        <h2>Sign-in</h2>
+		<form action="?" method="post">
+			<input type="text" placeholder="E-mail/Phone number" name="e-mail/phone">
+			<div class="password-box">
+				<input type="password" placeholder="Password" name="password" id="userPassword"><i class="fa fa-eye" id="togglePassword"></i>
+			</div>
+			<button class="confirm-login" type="submit">Continue</button>
+			<a href="#reset-password">Forgot password?</a><br><br>
+			<div class="login-with">or login with:</div>
+			<div class="google-fb-login">
+				<button class="facebook-login" type="submit"><i class="fa fa-facebook"></i>Facebook</button>
+				<button class="google-login" type="submit"><i class="fa fa-google"></i>Google</button>
+			</div><br>
+		</form>
+		Don't have an account? <a href="sign-up.php">Sign Up</a>
+    </div>
+	</div>
+	<footer>
+	<div id="footer" class="footer">
+	<a href="#top" style="display:block;">Back to top</a><br></a>
+	<div class="socials">
+		<h3>Follow us on Facebook:</h3><a href="https://www.facebook.com/bpfs2020/" class="facebook"><i class="fa fa-facebook"></i></a>
+	</div>
+	<br>
+	<h6>&copy; 2022 Bulacan Pet Fish Supply <br> All rights reserved. </h6>
+	</div>
+	</footer>
+<!--JavaScripts are at the bottom of the page so the page loads faster (the javascript loads slower)-->
+<script src="js/script.js"></script>
+</body>
+</html> 

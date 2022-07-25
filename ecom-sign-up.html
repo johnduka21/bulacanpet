@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/960bfa3deb.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="css/ecom-sign-up.css">
+    <link rel="icon" type="image/x-icon" href="images/PlaceholderFavIcon.ico">
+</head>
+
+<body>
+    <!--Banner.-->
+	<nav>
+        <div class="navBar">
+            <div class="container">
+                <a href="home.html">Bulacan Pet Fish Supply</a>
+                <a class ="nav-btn" href="home.html">Home</a>
+                <a href="fish-category.html">Fish</a>
+                <a href="#">Aquarium</a>
+                <a href="#">Accessories</a>
+                <a href="#">Our Location</a>
+                <a href="#">Contact</a>
+                <div class="navItem">
+                    <div class="search-box">
+                        <form action="/search.php">
+                        <input type="text" placeholder="Search Products" name="search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav> 
+
+    <div class="main-container">
+        <div class="login-container">
+            <div class="logo-flex">
+                <img class ="logo" src="images/PlaceholderFavIcon.ico" alt="">
+            </div>
+
+            <form action="php/signup.php" method="post">
+            <!-- Sign-Up Header -->
+            <h3>Step 1: Enter Information</h3>
+
+            <!-- Sign-Up Header -->
+            <h1>Sign-Up</h1>
+
+            <!-- Enter Fname -->
+            <label for="fname">First Name: </label><br>
+            <input type="text" name="fname" placeholder ="First Name..." required>
+            <br>
+
+            <!-- Enter Lname -->
+            <label for="lname">Last Name: </label><br>
+            <input type="text" name="lname" placeholder ="Last Name..." required>
+            <br>
+
+            <!-- Enter Email -->
+            <label for="email">Email: </label><br>
+            <input type="text" name="email" placeholder ="Email..." required>
+            <br>
+
+            <!-- Enter Username -->
+            <label for="username">Username: </label><br>
+            <input type="text" name="username" placeholder ="Username..." required>
+            <br>
+
+            <!-- Enter Password -->
+            <label for="password">Password: </label><br>
+            <input type="password" name="password" placeholder ="Password..." required>
+            <br>
+
+            <!-- Confirm Password -->
+            <label for="password">Confirm Password: </label><br>
+            <input type="password" name="password" placeholder ="Repeat Password..." required>
+            <br>
+            
+            <!-- Click Login Button -->
+            <button class="login-btn" type="submit" name="submit">Sign-Up</button>
+            </form>
+
+        </div>
+    </div>
+</body>

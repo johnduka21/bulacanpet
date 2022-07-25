@@ -1,0 +1,750 @@
+/* Applies to all elements */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins';
+	position: relative;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*MENU IMPROVED NAVIGATION BAR */
+.navBar{
+	padding: 12px 15px;
+	margin: auto;
+	font-size: 1.5rem;
+	color: #FFFFFF;
+	background: #0062E4;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	order: 1;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+/* ----- Search-bar code ----- */
+/*Search Box*/
+/*Search Box goes on the right*/
+
+.search-box {
+	float: right;
+}
+/*Search Box Format*/
+.search-box input[type=text] {
+	padding: 3px 5px;
+    margin: auto;
+    font-family: 'Poppins';
+	font-size: 17px;
+	border: none;
+}
+/*Search Box Button*/
+.search-box button {
+    float: right;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 32px;
+	margin-top: 4px;
+	margin-right: 30px;
+	background: #FFBD59;
+	border: none;
+    z-index: 1;
+	cursor: pointer;
+}
+/*Search Box Button Color changes when you hover over mouse*/
+.search-box button:hover {
+	background: #EEAC48;
+	transition: 0.3s;
+}  
+
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+    padding: 10px 10px;
+}
+
+.searchInput::placeholder{
+    color: darkgray;
+}
+
+.searchIcon{
+    background-color: #FFBD59;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.container a:hover {
+	color: #000C1D;
+	transition: 0.3s;
+}
+
+		/*------Navigation Bar------*/
+
+.menu-nav {
+	padding: .5em 0;
+	margin: auto;
+	font-size: 1.5rem;
+	color: #FFFFFF;
+	background: #0062E4;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	order: 1;
+}
+/*span padding*/
+.menu-nav span {
+	padding: .3125em;	
+}
+/*space after menu*/
+.menu-nav strong {
+	margin-left: .625em;
+}
+/*Search Box*/
+/*Search Box goes on the right*/
+.menu-nav .search-box {
+	float: right;
+}
+/*Search Box Format*/
+.menu-nav input[type=text] {
+	padding: 3px;
+	margin: auto;
+	font-size: 1.0625rem;
+	border: none;
+}
+/*Search Box Button*/
+.search-box button {
+	float: right;
+	padding: .1875em .625em;
+	margin-top: 5px;
+	margin-right: 16px;
+	background: #FFBD59;
+	font-size: 1.0625rem;
+	border: none;
+	cursor: pointer;
+}
+/*Search Box Button Color changes when you hover over mouse*/
+.menu-nav .search-box button:hover {
+	background: #EEAC48;
+	transition: 0.3s;
+}
+/*Clearfix: This is so the header stuff doean't overflow ever*/
+.menu-nav::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/*Sidebar: A whole lot of code*/
+.sidenav, .side-options, .sub-side-options {
+	top: 0;
+	transition: 0.3s;
+}
+.sidenav {
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: -500px;
+	background-color: #000C1d;
+	overflow-x: hidden;
+	transition: 0.3s;
+	padding-top: 60px;
+	display: flex;
+    flex-direction: column;
+}
+.side-options, .sub-side-options {
+	order:2;
+}
+.side-options a:before, .sidenav span:before, .sub-side-options a:before {
+	content: "";
+	position: absolute;
+	left: 25px;
+	bottom: 0;
+	height: 15px;
+	width: 200px;
+	border-bottom: 1px solid #B9B9B9;
+}
+.sub-side-options .closebtn:before, .back-to-menu:before, .profile span:before {
+	border-bottom: none !important;
+}
+.side-options a .fa, .sub-side-options a .fa {
+	content: "";
+	font-size: 15px;
+	color: #9c9c9c;
+	float: right;
+	margin-top: 8px;
+	margin-right: 15px;
+}
+.side-options a:hover .fa,.sub-side-options a:hover .fa {
+	margin-right: 10px;
+    transition: 0.3s;
+}
+.back-to-menu .fa {
+	float: left !important;
+}
+.back-to-menu:hover .fa {
+	margin-left:-10px;
+}
+.sidenav a:hover, .sub-side-options a:hover {
+	font-weight: bold;
+	color: #f1f1f1;
+    transition: 0.3s;
+}
+.sidenav a, .sidenav span {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #FFFFFF;
+	display: block;
+}
+.sub-side-options {
+	width: 250px;
+	padding-top: 0px;
+	display: none;
+}
+.profile {
+	position: absolute;
+	bottom: 10px;
+	order: 4;
+}
+.sidenav .closebtn, .sub-side-options .closebtn{
+	position: absolute;
+	top: 5px;
+	font-size: 36px;
+	margin-left: 8px;
+	order: 1;
+}
+.sub-side-options .closebtn{
+	position: absolute;
+	top: -55px;
+	display: none;
+}
+.back-to-menu {
+	background-color:#4E4E4E;
+	font-weight:bold;
+}
+
+
+/*Breadcrumbs*/
+ul.breadcrumbs {
+	padding: 70px 10px 0;
+	font-size: 14px;
+	list-style: none;
+}
+ul.breadcrumbs li {
+	display: inline;
+}
+ul.breadcrumbs li+li:before {
+	color: #989898;
+	padding: 1px;
+	content: "/\00a0";
+}
+ul.breadcrumbs li a {
+	color: #989898;
+	text-decoration: none;
+}
+ul.breadcrumbs li a:hover {
+	text-decoration: underline;
+} 
+h3 {
+	padding: 10px;
+}
+/* The banner at the top of the page */
+.wide-image {
+	/*Banner image*/
+	background-image: url(../images/aquariums.png);
+  
+	/*Height so that the picture appears*/
+	height: 80vh;
+  
+	/*Responsive image*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+  }
+  /* Text position */
+.image-over-text {
+	background-color: rgba(0, 0, 0, 0.3);
+	width:100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0%, -50%);
+	color: white;
+	padding: 25px 20px;
+  }
+.image-over-text button{
+	background-color: #0062E4;
+	cursor:pointer;
+	font-size: 16px;
+	color: white;
+	border-style: none;
+	border-radius: 25px;
+	outline: none;
+	padding: 15px;
+  }
+/*Box for product description*/
+.product-box {
+	position: relative;
+	padding: 18px 0px 0px 30px;
+	margin: auto;
+}
+.product-box img {
+	margin: 15px;
+	float: left;
+	width: 200px;
+	height: 200px; 
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.product-box::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/*Product description*/
+.product {
+	font-size: 16px;
+	margin: 12px 0px 0px 130px;
+	line-height: 2.3;
+	bottom: 8px;
+}
+.product a{
+	color: #000C1D;
+}
+/*Rounded images in category*/
+.round-image {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.round-image img {
+	border-radius: 50%;
+	margin: 10px 45px;
+	width:150px;
+	height:150px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	object-fit: cover;
+}
+.round-image::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.shop-category-box {
+	display: inline-grid;
+	text-align: center;
+	transition: transform .2s;
+	padding:10px;
+}
+.shop-category-box a {
+	text-decoration: none;
+	color: black;
+}
+.shop-category-box:hover {
+	-ms-transform: scale(1.1); /*For Internet Explorer 9*/
+	-webkit-transform: scale(1.1); /*For Safari 3-8*/
+	transform: scale(1.1); 
+}
+.banner, .footer {
+	padding: 50px 25px;
+	color: white;
+	background-color: #000C1D;
+}
+.banner{
+	padding: 50px 25px;
+}
+.banner h1{
+	padding: 50px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+}
+.banner a, .footer a{
+	color: white;
+}
+.banner h3{
+	padding: 0px;
+	line-height: 0.5;
+}
+#webpage {
+	flex-grow: 1; 
+}
+.footer{
+	text-align: center;
+	height: 270px;
+}
+.socials a{
+	font-size: 36px;
+	border-radius: 100%;
+}
+.footer h6{
+	font-weight: normal;
+}
+.facebook{
+	background: #45619D;
+	padding: 5px 20px;
+}
+/*Homepage-specific content*/
+/*Slideshow container*/
+.slideshow-container {
+	width: 50%;
+	position: relative;
+	margin: auto;
+}
+/*Hide the boxes by default*/
+.recentSlides, .bestSlides  {
+	display: none;
+}
+/*Next & previous buttons*/
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 18px;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 3px 0 0 3px;
+	user-select: none;
+}
+/*Next Button on the right*/
+.next {
+	right: 0;
+	border-radius: 0 3px 3px 0;
+}
+/*Color on hover*/
+.prev:hover, .next:hover {
+	background-color: #c9c9c9;
+}
+
+/*Fading animation for slideshow*/
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@keyframes fade {
+	from { opacity: .4 }
+	to { opacity: 1 }
+}
+/*FAQ Questions and Answers*/
+.question, .answer {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.question {
+	background-color: white;
+	cursor: pointer;
+	padding: 15px;
+	text-align: left;
+	font-size: 18px;
+	border-style: none none solid none;
+	outline: none;
+	transition: 0.4s;
+}
+/*FAQ when clicked*/
+.active, .question:hover {
+	background-color: #ddd;
+}
+/*Hide the answer by default*/
+.answer {
+	padding: 5px 18px;
+	text-indent: 25px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+.question:after {
+	content: '\FF0B';
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	float: right;
+	margin-left: 5px;
+}
+.active:after {
+	content: "\FF0D";
+}
+.location iframe{
+	width: 50vw;
+	height: 28.125vw;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.location {
+	text-align: center;
+}
+.footer h3 {
+	padding-top: 0 !important;
+}
+.sign-in {
+	width: 400px;
+	margin: 100px auto;
+	padding: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	color: #858585;
+	text-align: center;
+}
+.sign-in h2 {
+	color: black;
+	width: 95%;
+	margin: auto;
+	text-align: left;
+	font-weight: normal;
+	padding-bottom: 10px;
+}
+.sign-in input, .confirm-login, .google-fb-login {
+	display: block;
+	width: 95%;
+	padding: 10px;
+}
+.sign-in input {
+	background-color:#e8e8e8;
+	border: none;
+	margin: 20px auto;
+}
+.password-box {
+	display: flex;
+	width: 95%;
+	justify-content: center;
+	align-items: center;
+	margin:auto;
+}
+.password-box input {
+	flex-grow: 2;
+	padding: 10px;
+	margin: 10px 0;
+}
+.confirm-login,  .google-fb-login button {
+	font-size: 15px;
+	border: none;
+	outline: none;
+	cursor:pointer;
+}
+.password-box .fa {
+	margin-left: -36px;
+	padding: 10px;
+	cursor:pointer;
+	background-color: #e8e8e8;
+}
+.confirm-login {
+	margin: 40px auto 0;
+	background-color: #000C1D;
+	color: white;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.confirm-login:hover {
+	background-color: #0051D3;
+}
+.sign-in a {
+	font-weight: bold;
+	text-decoration: none;
+}
+.login-with {
+	display: flex;
+	align-items: center;
+	text-align: center;
+  }
+  .login-with::before,
+  .login-with::after {
+	content: "";
+	flex: 1;
+	border-bottom: 1px solid #b9b9b9;
+  }
+  
+  .login-with:not(:empty)::before {
+	margin-right: 10px;
+  }
+  
+  .login-with:not(:empty)::after {
+	margin-left: 10px;
+  }
+  .google-fb-login {
+	  width: 100%;
+	  display: flex;
+	  flex-flow: row wrap;
+	  justify-content: space-between;
+  	  align-items: center;
+  }
+  .google-fb-login button {
+	padding:10px;
+	width:48%;
+	transition: 0.3s;
+  }
+  .google-fb-login i{
+	margin: 0 10px;
+  }
+	/*Slideshow and Location image on smaller screens*/
+  	@media screen and (max-width: 1024px) {
+		.slideshow-container {
+			width: 100%;
+			position: relative;
+		}
+		.location iframe{
+			width: 100vw;
+			height: 56.25vw;
+		}
+	}
+/* Media Query for some stuff*/
+		/*For the reeeeeaaally small screens*/
+		@media screen and (max-width: 360px) {
+			.closebtn{
+				display: block;
+			}
+			.product-box img {
+				float: none;
+				display: block;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+			.banner h1{
+				font-size:25px;
+			}
+			.product {
+				margin: 0;
+				text-align: center;
+			}
+        }
+		@media screen and (max-width: 365px) {
+			ul.breadcrumbs{
+				padding-top: 140px;
+			}
+			.faq, h3{
+				padding-top: 90px;
+			}
+        }
+		@media screen and (max-width: 375px) {
+			ul.breadcrumbs{
+				padding-top: 140px;
+			}
+			.faq, h3{
+				padding-top: 90px;
+			}
+			.image-over-text h1{
+				font-size: 18px;
+			}
+        }
+		@media screen and (max-width: 460px) {
+			.product-box img {
+				width: 150px;
+				height: 150px; 
+			}
+        }
+		@media screen and (min-width: 366px) and (max-width: 767px) {
+			ul.breadcrumbs{
+				padding-top: 100px;
+			}
+			h3 {
+				padding-top: 50px;
+			}
+		}
+		/*For screens with small heights*/
+
+		@media screen and (max-height: 250px) {
+			.sidenav {
+				width: 100%;
+			}
+		}
+		@media screen and (max-height: 450px) {
+			.sidenav a, .sub-side-options span {
+				font-size: 18px;
+			}
+		}
+		@media screen and (max-height: 485px) {
+			.profile {
+				position:relative;
+				margin-top:10px;
+			}
+		}
+				@media screen and (max-height: 500px) {
+			.wide-image {
+				height: 500px;
+			  }
+		}
+		/*Search bar for mobile phones*/
+		@media screen and (max-width: 767px) {
+			.menu-nav {
+				padding: 0;
+			}
+			.menu-nav .search-box {
+				float: none;
+			}
+			.menu-nav input[type=text], .menu-nav .search-box button {
+				float: none;
+				display: block;
+				text-align: left;
+				width: 100%;
+				margin: 0;
+			}
+		}
+		
+		/*This stuff is for what kind of screen you are using. Delete after complete testing.*/
+        /* Media Query for Mobile Devices 
+        @media (max-width: 480px) {
+            body {
+                background-color: red;
+            }
+        }
+        /* Media Query for low resolution  Tablets, Ipads 
+        @media (min-width: 481px) and (max-width: 767px) {
+            body {
+                background-color: yellow;
+            }
+        }
+        /* Media Query for Tablets Ipads portrait mode 
+        @media (min-width: 768px) and (max-width: 1024px){
+            body {
+                background-color: blue;
+            }
+        }
+        /* Media Query for Laptops and Desktops 
+        @media (min-width: 1025px) and (max-width: 1280px){
+            body {
+                background-color: green;
+            }
+        }
+        /* Media Query for Large screens 
+        @media (min-width: 1281px) {
+            body {
+                background-color: white;
+            }
+		}
+		Paste the end */
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/960bfa3deb.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulacan Pet Fish Supply Dashboard</title>
+    <link rel="stylesheet" href="css/inventory-stock.css">
+    <link rel="icon" type="image/x-icon" href="images/PlaceholderFavIcon.ico">
+</head>
+<body>
+    <!-- https://www.youtube.com/watch?v=7H0Aw44tVpQ&list=PLglf6-OPbGDfDFpnN67xqvTCR4WxQm4bd&index=4 -->
+    <div id="dashboardMainContainer">
+        <div class="dashboard_sidebar">
+            <h1 class="dashboard_logo">Bulacan Pet Fish Supply</h1>
+
+            <div class="dashboard_sidebar_user">
+                <img src="images/Inventory System/Dashboard/user.png" alt="User Image"/>
+                <span>Admin</span>
+            </div>
+            <div class="dashboard_sidebar_menu">
+                <ul class="dashboard_menu_lists">
+                    <li>
+                        <a href="inventory-dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="inventory-stock.html">Inventory</a>
+                    </li>
+                    <li>
+                        <a href="inventory-orders.html">Orders</a>
+                    </li>
+                    <li>
+                        <a href="inventory-sales-report.html">Sales Report</a>
+                    </li>
+                    <li>
+                        <a href="inventory-customers.html">Customers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="add-details-container">
+            <div class="add_container">
+                <div class="add_topNav">
+                    <h1>Add Products</h1>
+                    <a href="inventory-stock.html" class="href"><button id="add-cancel-btn">Cancel</button></a>
+                </div>
+            </div>
+            
+            <div class="details-container">
+                <h4>Product ID: 102314</h4>
+                <label for="p-title">Product Title:</label>
+                <input type="text" id="p-title" name="p-title">
+
+                <div>
+                    <label for="prod-category">Product Category:</label>
+                    <select class="category-select">
+                        <option value="">Fish</option>
+                        <option value="">Accessories</option>
+                    </select>
+                </div>
+
+                <br>
+                <label for="ret-price">Retail Price:</label>
+                <span class="currencyinput">₱<input type="number" name="ret-price" value="1" min="1"></span>
+
+                <br>
+                <label for="whole-price">Wholesale Price:</label>
+                <span class="currencyinput">₱<input type="number" name="whole-price" value="1" min="1"></span>
+
+                <br>
+                <label for="stock-no">Stock:</label>
+                <span><input type="number" name="stock-no" value="1" min="1"></span>
+
+                <br>
+                <label for="prod-description">Product Description:</label>
+                <span><input type="text" name="prod-description"></span>
+
+                <br>
+                <button class="add-prdct-btn">Add Product</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>    

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/960bfa3deb.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="css/ecom-sign-in.css">
+    <link rel="icon" type="image/x-icon" href="images/PlaceholderFavIcon.ico">
+</head>
+
+<body background="">
+    <!--Banner.-->
+
+	<nav>
+        <div class="navBar">
+            <div class="container">
+                <a href="home.html">Bulacan Pet Fish Supply</a>
+                <a class ="nav-btn" href="home.html">Home</a>
+                <a href="fish-category.html">Fish</a>
+                <a href="#">Aquarium</a>
+                <a href="#">Accessories</a>
+                <a href="#">Our Location</a>
+                <a href="#">Contact</a>
+                <div class="navItem">
+                    <div class="search-box">
+                        <form action="/search.php">
+                        <input type="text" placeholder="Search Products" name="search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav> 
+
+    <div class="main-container">
+        <div class="login-container">
+            <div class="logo-flex">
+                <img class ="logo" src="images/PlaceholderFavIcon.ico" alt="">
+            </div>
+            <!-- Sign-In Header -->
+            <h1>Sign-In</h1>
+
+            <!-- Enter Email -->
+            <label for="username">Email: </label>
+            <input type="text" name="username" required>
+
+            <!-- Enter Password -->
+            <label>Password: </label>
+            <input type="password" name="password" required>
+
+            <!-- Click Login Button -->
+            <button class="login-btn" type="submit">Login</button>
+
+            <!-- Click Sign-Up Button -->
+            <p>Don't Have An Account Yet?</p>
+            <a href="">Sign-Up Here</a>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/960bfa3deb.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav> <!--Navigation Menu Bar--> 
+        <div class="navBar">
+            <div class="container">
+                <strong> <a href="home.html">BULACAN PET FISH SUPPLY | Checkout</a></strong>
+                <!-- <h3 class="menuItem">Home</h3>
+                <h3 class="menuItem">Fish</h3>
+                <h3 class="menuItem">Aquarium</h3>
+                <h3 class="menuItem">Accessories</h3>
+                <h3 class="menuItem">Our Location</h3>
+                <h3 class="menuItem">Contact</h3>
+                -->
+                <div class="navItem">
+                    <div class="search-box">
+                        <form action="/search.php">
+                        <input type="text" placeholder="Search Products" name="search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </nav> 
+
+
+    <!-- Checkout Container -->    
+    <div class="checkoutItems">
+        
+        <!-- 1. Products Ordered Table -->
+        <div id="products-ordered-container">
+            <div class="table-header">
+                <p class="products-ordered-txt">Products Ordered</p>
+            </div>
+            <table class="products-ordered">
+                <!--
+                <tr>
+                    <th><p>Products Ordered</p></th>
+                </tr> 
+                -->
+                <tr class="column-headers"> <!-- Column Headers -->
+                    <td>Product Name</td>
+                    <td>Unit Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+                
+                <tr class="product-details"> <!-- Product No. 1 -->
+                    <td>Betta</td>
+                    <td>P10.00</td>
+                    <td>1</td>
+                    <td>P10.00</td>
+                </tr>
+
+            </table>
+        </div>
+
+
+        <!-- 2. Delivery Address Table -->
+        <div class="delivery-address-container">
+            <div class="table-header">
+                <p class="delivery-address-txt">Delivery Address</p>
+            </div>
+            <table class="delivery-address">
+                <tr>
+                    <td>John Duka</td>
+                    <td>396 Sto. Domingo St. Brgy Fatima I</td>
+                    <td>CHANGE</td>
+                </tr>
+            </table>
+
+            <!-- 3. Payment Method -->
+            <div class="table-header">
+                <p class="payment-method-txt">Payment Method</p>
+            </div>
+            <table class="payment-method">
+                <tr>
+                    <td>Cash On Delivery</td>
+                    <td>Pay on Pickup</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="place-order-button">
+        <a href="">
+            <button type="button">PLACE ORDER</button>
+        </a>
+    </div>
+    
+</body>
+</html>

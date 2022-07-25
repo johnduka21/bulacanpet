@@ -1,0 +1,292 @@
+#dashboardMainContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f5f5;
+}
+
+/* Dashboard Sidebar */
+div.dashboard_sidebar{
+    width: 20%;
+    background-color: #000C1D;
+    height: 115vh;
+}
+
+
+/* H1 - BPFS */
+h1.dashboard_logo {
+    color: #0062E4;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+div.dashboard_sidebar_user{
+    position: relative;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 10px;
+}
+
+/* Admin Photo */
+div.dashboard_sidebar_user img{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Admin Text */
+div.dashboard_sidebar_user span{
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    padding: 5px 40px;
+    display: block;
+    text-align: center;
+}
+
+/* Dashboard Sidebar Menu List */
+ul.dashboard_menu_lists{
+    padding: 0px 0px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+ul.dashboard_menu_lists li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    height: 100%;
+}
+
+/* Sidebar Menu List Items - Spacing */
+ul.dashboard_menu_lists li{
+    background: #003e8f;
+    padding: 10px 20px;
+    font-family: 'Open Sans';
+}
+
+ul.dashboard_menu_lists li:hover{
+    color: #000C1D;
+    background: #0062E4;
+    transition: 0.3s;
+}
+
+
+    /* ----- Main Content ----- */
+div.dashboard_content{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+div.dashboard_content_container{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+div.dashboard_topNav{
+    background: #FFFFFF;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+#logout-button{
+    font-family: 'Poppins';
+    float: right;
+}
+
+/* Dashboard Content */
+div.dashboard_content_main{
+    background:#FFFFFF;
+    min-height: 800px;
+    height: 100%;
+    padding: 20px 50px;
+}
+
+div.dashboard_content{
+    padding: 20px 10px 10px 10px;
+}
+
+/* Dashboard Cards - Products, Customers, etc. */
+div.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+div.card-single{
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    background: #000C1D;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    padding: 5px 20px;
+    border-radius: 2px;
+}
+
+.card-single:hover{
+    background: #0062E4;
+    transition: 0.3s;
+}
+
+.card-single h1{
+    color: #FFBD59;
+}
+
+.card-single a:link{
+    text-decoration: none;
+    color: #FFBD59;
+    background-color: none;
+}
+
+.card-single span{
+    color: #0772fd;
+}
+
+.card-single p{
+    font-size: 1.2rem;
+    color: #cbcbcb;
+    margin-top: -15px;
+}
+
+.card-single span{
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+/* ----- Main Content 2 - Recent Orders ----- */
+
+.recent-orders{
+    background-color: #000C1D;
+    min-height: 50vh;
+    margin: 25px 0px 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.recent-orders table{
+    /*display: flex;*/
+    flex-direction: column;
+    flex: 2;
+    margin: 0 0 40px 0;
+    width: 100%;
+    padding: 0px;
+    display: table;
+}
+
+.recent-orders p{
+    font-weight: bolder;
+    font-size: 20px;
+    justify-content: left;
+    color:#FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    margin-top: 10px;
+    padding: 12px 15px;
+}
+
+.recent-orders th, td{
+    font-size: 17px;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 1px 50px;
+}
+
+
+/* ----- INVENTORY PRODUCTS (STOCK CONTROL)  ----- */ 
+
+/* Top Navigation Container */
+
+.products-container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: left;
+    background: #FFFFFF;
+}   
+
+.headline h1{
+    font-family: 'Poppins';
+    padding: 0px 40px;
+}
+
+#products-add-product{
+    font-weight: bolder;
+    color: white;
+    background-color: #000C1D;
+    padding: 10px 12px;
+    margin-top: 26px;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+
+#products-add-product:hover{
+    background-color: #0062E4;
+    transition: 0.1s;
+}
+
+
+/* Products Table Container */
+.table-container {
+    display: table;
+}
+
+.table-headline p{
+    font-family: 'Poppins';
+}
+
+.table-container tr{
+    font-family: sans-serif;
+}
+
+/* ----- INVENTORY PRODUCTS (STOCK CONTROL) 2  ----- */ 
+
+/* Top Navigation Container */
+
+.stock_topNav{
+    width: 100%;
+    background-color: #f5f5f5;
+    background: #FFFFFF;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.stock_container h1{
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+
+.stock_content.products-table{
+    background-color: #000C1D;
+    min-height: 50vh;
+    margin: 25px 0px 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.products-table table{
+    flex-direction: column;
+    flex: 2;
+    margin: 0 0 40px 0;
+    width: 100%;
+    padding: 0px;
+    display: table;
+}
+
+.products-table p{
+    font-weight: bolder;
+    font-size: 20px;
+    justify-content: left;
+    color:#FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    margin-top: 10px;
+    padding: 12px 15px;
+}
+
+.products-table th, td{
+    font-size: 17px;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 1px 50px;
+}

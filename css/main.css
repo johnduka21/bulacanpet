@@ -1,0 +1,462 @@
+body {
+  font-family: 'Poppins';
+  padding: 0;
+  margin: 0;
+  background-color: #f1f1f1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ----- Navigation Menu Bar ----- */
+.navBar {
+  padding: 12px 15px;
+  margin: auto;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  background: #0062E4;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Poppins';
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+/* ----- Search-bar code ----- */
+/*Search Box*/
+/*Search Box goes on the right*/
+.search-box {
+  float: right;
+}
+
+/*Search Box Format*/
+.search-box input[type=text] {
+  padding: 3px 5px;
+  margin: auto;
+  font-family: 'Poppins';
+  font-size: 17px;
+  border: none;
+}
+
+/*Search Box Button*/
+.search-box button {
+  float: right;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 32px;
+  margin-top: 4px;
+  margin-right: 30px;
+  background: #FFBD59;
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/*Search Box Button Color changes when you hover over mouse*/
+.search-box button:hover {
+  background: #EEAC48;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.searchInput {
+  border: none;
+  background-color: transparent;
+  padding: 10px 10px;
+}
+
+.searchInput::-webkit-input-placeholder {
+  color: darkgray;
+}
+
+.searchInput:-ms-input-placeholder {
+  color: darkgray;
+}
+
+.searchInput::-ms-input-placeholder {
+  color: darkgray;
+}
+
+.searchInput::placeholder {
+  color: darkgray;
+}
+
+.searchIcon {
+  background-color: #FFBD59;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+/* ----- Product Cart Items ----- */
+.cartItems {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 15px;
+}
+
+.cartInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+th {
+  text-align: left;
+  padding: 10px 30px;
+  color: #ffffff;
+  font-weight: lighter;
+  background-color: #000C1D;
+}
+
+td {
+  padding: 10px 31px;
+  background-color: #ffffff;
+}
+
+td input {
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a {
+  color: #0062E4;
+  font-size: 12px;
+}
+
+td img {
+  width: 100px;
+  height: 80px;
+}
+
+/* ----- Cart Total ----- */
+/* Cart Total Header */
+.cart-total {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* Cart Total Container*/
+#cart-bottom .d-flex {
+  background-color: #ffffff;
+  margin-left: 800px;
+  margin-right: 122px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#cart-bottom .cart-total h3 {
+  background-color: #000C1D;
+  color: #ffffff;
+  border: none;
+  padding: 10px 30px;
+  margin-left: 800px;
+  margin-right: 122px;
+}
+
+/* Subtotal */
+#cart-bottom .cart-total h4 {
+  padding: 10px 10px;
+  margin-left: 20px;
+}
+
+/* Prices */
+#cart-bottom .cart-total p {
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Proceed to Checkout Button */
+#cart-bottom button {
+  background-color: #0062E4;
+  border: none;
+  color: #ffffff;
+  font-weight: bolder;
+  padding: 20px 20px;
+  margin-left: 1205px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.cart-total button:hover {
+  background: #000C1D;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* ----- Footer ----- */
+.footer {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #000C1D;
+  color: #ffffff;
+}
+
+.footer a {
+  padding-top: 40px;
+  color: white;
+}
+
+.footer h6 {
+  color: white;
+}
+
+.fbLogo {
+  width: 70px;
+  height: 70px;
+}
+
+/* ----- Checkout CSS ----- */
+.checkoutItems {
+  background-color: #f1f1f1;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+/* Table Header Text Format for -Products Ordered- AND -Delivery Address- Table */
+/* BAKA GAMITIN ULIT IN CASE...
+.checkoutItems .table-header{
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 30px;
+    color: #ffffff;
+    font-weight: lighter;
+    background-color: #000C1D; 
+}
+*/
+.table-header .products-ordered-txt {
+  font-size: 18px;
+  text-align: left;
+  padding: 10px 30px;
+  color: #ffffff;
+  font-weight: lighter;
+  background-color: #000C1D;
+}
+
+.table-header .delivery-address-txt {
+  font-size: 18px;
+  text-align: left;
+  padding: 10px 30px;
+  color: #ffffff;
+  font-weight: lighter;
+  background-color: #000C1D;
+}
+
+.table-header .payment-method-txt {
+  font-size: 18px;
+  text-align: left;
+  padding: 10px 30px;
+  color: #ffffff;
+  font-weight: lighter;
+  background-color: #EEAC48;
+}
+
+/* Products Ordered Table Format (Below Table Header Text)*/
+.checkoutItems table.products-ordered {
+  position: relative;
+  width: 100%;
+  border-spacing: 0px 5px;
+  margin-bottom: 20px;
+}
+
+/* Delivery Address Table (Below Table Header Text)*/
+.checkoutItems table.delivery-address {
+  width: 100%;
+  border-spacing: 0px 0px;
+  margin-bottom: 20px;
+}
+
+/* Payment Method Table (Below Table Header Text)*/
+.checkoutItems table.payment-method {
+  width: 100%;
+  border-spacing: 0px 0px;
+  margin-bottom: 20px;
+}
+
+/* Still not working */
+.checkoutItems #products-ordered-container {
+  background-color: #f1f1f1 !important;
+}
+
+/* Place Order Button on the right corner below*/
+#place-order-button button {
+  background-color: #0062E4;
+  border: none;
+  color: #ffffff;
+  font-weight: bolder;
+  padding: 20px 20px;
+  right: -1280px;
+  position: relative;
+  cursor: pointer;
+}
+
+#place-order-button button:hover {
+  background: #000C1D;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* ---- Product Listing Page ---- */
+.product-list-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (500px)[4];
+      grid-template-columns: repeat(4, 500px);
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  row-gap: 20px;
+}
+
+.product-list {
+  padding: 3em;
+}
+
+.product-list .card {
+  background-color: #ffffff;
+  padding: 1em;
+  -webkit-box-shadow: 0px 5px 5px #D3D3D3;
+          box-shadow: 0px 5px 5px #D3D3D3;
+  text-align: center;
+  font-family: 'Poppins';
+  max-width: 25%;
+}
+
+.card .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card .text {
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* Product Listing: Card Checkout and Add to Cart Buttons*/
+#card-checkout button {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  font-weight: bolder;
+  background-color: #0062E4;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#card-checkout button:hover {
+  background: #0057ca;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#card-addtocart button {
+  font-weight: bolder;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  background-color: #EEAC48;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#card-addtocart button:hover {
+  background: #da9d42;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*https://www.youtube.com/watch?v=QRHjKAq4x3I*/
+/* ---- Product Listing Page COPY ---- */
+:root {
+  --white: #ffffff;
+  --dark-blue: #000C1D;
+  --light-blue: #0062E4;
+  --yellow: #EEAC48;
+}
+
+body {
+  font-family: 'Poppins', 'Sans Serif';
+}
+
+/* Utility Stylings */
+.product-content img {
+  width: 100%;
+  display: block;
+}
+
+.listing-container {
+  width: 88vw;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.product-title {
+  font-family: 'Poppins', 'Sans Serif';
+  padding: 0.6rem 0;
+  text-transform: capitalize;
+}
+
+.listing-items {
+  background: --dark-blue;
+  padding: 3.2rem 0;
+}
+/*# sourceMappingURL=main.css.map */

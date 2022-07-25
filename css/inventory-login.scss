@@ -1,0 +1,45 @@
+:root{
+    --white: #ffffff;
+    --gray: #e4e4e4;
+    --dark-blue: #000C1D; 
+    --light-blue: #0062E4;
+    --yellow: #EEAC48;;
+}
+
+/* ----- Inventory Login Container -----*/
+.login-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 100% auto;
+    font-family: 'Poppins';
+    padding: 30px 50px 40px;
+    margin: 150px 500px 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    line-height: 40px;
+}
+
+.login-container img.logo{
+    margin: 0px 200px 0px;
+    width: 30px;
+}
+
+.login-container h1{
+    text-align: center;
+}
+
+.login-container input{
+    padding: 10px;
+    font-size: 17px;
+}
+
+.login-container button.login-btn{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    /*margin: 20px 100px 0px;*/
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
