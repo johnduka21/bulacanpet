@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en-PH">
 <head>
@@ -23,6 +19,9 @@
     <script src="https://kit.fontawesome.com/960bfa3deb.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<?php
+    session_start();
+?>
 	<div id="webpage">
 	<!--Banner.-->
 
